@@ -11,7 +11,7 @@ services:
 
   db:
     image: mysql:5.7
-    container_name: "Final_Database"
+    container_name: "MySQL_Database2"
     ports:
       - "32000:3306"
     environment:
