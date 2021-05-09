@@ -17,14 +17,6 @@ def __init__(self, username, password):
     self.password = password
 
 
-@app.route('/', methods=['GET'])
-def index():
-    if session.get('logged_in'):
-        return render_template('home.html')
-    else:
-        return render_template('index.html', message="Hello!")
-
-
 @app.route('/register/', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
