@@ -3,7 +3,7 @@ version: "2"
 services:
   app:
     build: ./app
-    container_name: "Flask_App6"
+    container_name: "Flask_App7"
     links:
       - db
     ports:
