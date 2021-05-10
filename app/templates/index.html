@@ -1,6 +1,9 @@
-
 {% extends "layout.html" %}
 {% block content %}
+    {%  if not current_user.is_authenticated %}
+    <p>Please sign up</p>
+{% endif %}
+{% if current_user.is_authenticated %}
 <table class="table">
     <thead>
     <tr>
@@ -27,4 +30,5 @@
     {% endfor %}
     </tbody>
 </table>
+{%  endif %}
 {% endblock %}
