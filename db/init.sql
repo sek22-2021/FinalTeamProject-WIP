@@ -1,6 +1,21 @@
+CREATE Database LoginData;
+use LoginData;
 
-CREATE DATABASE zillowData;
-use zillowData;
+DROP TABLE if exists accounts;
+
+create table accounts
+(
+	id int auto_increment,
+	username varchar(99) character set utf8 not null,
+	password varchar(99) character set utf8 not null,
+	email varchar(99) character set utf8 not null,
+	constraint accounts_pk
+		primary key (id)
+);
+
+Insert into accounts (id, username, password, email) value
+(1, sally, '123456','sallyekhalil@gmail.com' )
+
 CREATE TABLE IF NOT EXISTS tblZillowImport
 (
     `id` int(3) AUTO_INCREMENT,
