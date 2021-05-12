@@ -3,3 +3,5 @@ flask-mysql
 simplejson
 flask_mail
 pymysql
+sendgrid
+flask-mysql

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>OTP VERIFICATION</title>
+    <title>Index</title>
         <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,11 +25,11 @@
             crossorigin="anonymous"></script>
 </head>
 <div class="container">
-    <div style="margin-top:10%; text-align: center">
-        <form action="/validate" method="post">
-            <h3>A one-time password has been sent to your email. Please Enter the OTP Below. </h3>
+    <div class="center" style="text-align: center; margin-top: 10%;">
+        <form action="/verify" method="post">
+            <h3>Please enter your email to be verified below.</h3>
             <p> <b></b></p>
-            Enter OTP: <input type="text" name="otp">
+            Email:<input id="email" name="email" type="text" placeholder="Enter Your email" class="textbox"/>
             <input type="submit" value="Submit">
         </form>
     </div>

@@ -104,7 +104,7 @@ def register_post():
     return redirect("/", code=302)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/index', methods=['GET'])
 def index():
     user = {'username': 'Zillow Project'}
     cursor = mysql.get_db().cursor()
